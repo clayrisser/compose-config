@@ -12,9 +12,10 @@ export default class FileLoader<Config = any, Context = any> {
 
   async load(): Promise<Config> {
     let result: Config;
-    if (this.fileType === 'yaml') {
+    const { fileType } = this;
+    if (fileType === 'yaml') {
       result = await this.loadYaml();
-    } else if (this.fileType === 'js') {
+    } else if (fileType === 'js') {
       result = await this.loadJs();
     } else {
       try {
