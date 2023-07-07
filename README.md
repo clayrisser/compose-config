@@ -4,6 +4,8 @@
 
 > asynchronously compose config
 
+![](assets/compose-config.png)
+
 Please ★ this repo if you found it useful ★ ★ ★
 
 ## Features
